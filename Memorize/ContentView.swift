@@ -31,6 +31,7 @@ struct ContentView: View {
             .font(.largeTitle)
         }
         .padding(.horizontal)
+        
     }
     
     var remove: some View {
@@ -64,7 +65,8 @@ struct CardView: View {
             if isFaceUp {
                 shape.fill().foregroundColor(.white)
                 shape.strokeBorder(lineWidth: 3)
-                Text(content).font(.largeTitle)
+                Text(content)
+                    .font(.largeTitle)
             } else {
                 shape.fill()
             }
